@@ -78,21 +78,21 @@ Untuk menyelesaikan masalah ini, penulis akan menggunakan 2 solusi algoritma yai
   
   Distribusi tahun rilis film:
 
-  ![Distribusi Tahun Rilis](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/tahun_rilis.png)
+  ![Distribusi Tahun Rilis](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/tahun_rilis.png)
   Gambar 1. Distribusi sebaran Tahun Rilis film
 
   Dapat dilihat pada grafik di atas rata-rata rilis sebuah film berkisar antara tahun 1990-2000 ke atas, distribusi terbanyak terjadi di atas tahun 2000, di mana distribusi film cenderung mengalami kenaikan secara signifikan setiap berjalannya waktu.
 
   Distribusi total jumlah genre:
 
-  ![Distribusi Genre](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/genre.png)
+  ![Distribusi Genre](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/genre.png)
   Gambar 2. Distribusi sebaran genre film
 
   Terlihat pada gambar di atas ada 20 kategori atau genre di dalam data ini. genre `Drama` yang paling banyak dan diikuti oleh genre `Comedy` lalu ada beberapa film yang tidak memiliki genre `no genres listed`
   
   10 film yang memiliki _rating_ tertinggi:
 
-  ![Top Rating](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/top_ten.png)
+  ![Top Rating](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/top_ten.png)
   Gambar 3. Distribusi Sebaran rating dari 10 film tertinggi
 
   Terlihat pada grafik, bahwa film yang memiliki _rating_ tertinggi adalah **Forrest Gump** yang rilis pada tahun 1994
@@ -125,7 +125,7 @@ Pada modeling `Content Based Filtering`, langkah pertama yang dilakukan ialah pe
 
 Untuk menghitung derajat kesamaan (_similarity degree_) antar movie, penulis menggunakan teknik _cosine similarity_ dengan fungsi _cosine_similarity_ dari _library_ sklearn. Berikut dibawah ini adalah rumusnya:
 
-![Rumus Cosine Similarity](https://i0.wp.com/hendroprasetyo.com/wp-content/uploads/2020/04/image-3.png?resize=407%2C110&ssl=1)
+![Rumus Cosine Similarity](https://camo.githubusercontent.com/8d30a8f1b354dfa7fab96839c43c2288d5640f651d822eaca2a430e1fd716fdb/68747470733a2f2f69302e77702e636f6d2f68656e64726f707261736574796f2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032302f30342f696d6167652d332e706e673f726573697a653d3430372532433131302673736c3d31)
 Gambar 4. Rumus Cosine Similarity
 
 Langkah selanjutnya yaitu menggunakan _argpartition_ untuk mengambil sejumlah nilai k tertinggi dari _similarity_ data kemudian mengambil data dari bobot (tingkat kesamaan) tertinggi ke terendah. Kemudian menguji akurasi dari sistem rekomendasi ini untuk menemukan rekomendasi movies yang mirip dari film yang ingin dicari.
@@ -139,14 +139,14 @@ Langkah selanjutnya yaitu menggunakan _argpartition_ untuk mengambil sejumlah ni
 
 Berikut ini adalah konten yang dijadikan referensi untuk menentukan 10 rekomendasi film tertinggi yang memiliki kesamaan genre yang sama:
 
-![Content Based Filtering Data Uji](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/cek_film.png)
+![Content Based Filtering Data Uji](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cek_film.png)
 Gambar 5. Cek film
 
 Terlihat pada tabel diatas bahwasannya saya akan menguji coba model berdasarkan judul film "Daddy Day Care (2003)" dengan genre Children & Comedy.
 
 Berikut ini adalah hasil rekomendasi tertinggi dari model _Content Based Filtering_ berdasarkan referensi film diatas:
 
-![Content Based Filtering](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/cbf.png)
+![Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cbf.png)
 Gambar 6. Content Based Filtering
 
 ### Collaborative Filtering
@@ -165,7 +165,7 @@ Lakukan proses _embedding_ terhadap data film dan pengguna. Lalu lakukan operasi
 
 Berikut ini adalah hasil rekomendasi film tertinggi terhadap user 606:
 
-![Content Based Filtering](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/cf.png)
+![Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cf.png)
 Gambar 7. Content Based Filtering
 
 ## Evaluation
@@ -176,12 +176,12 @@ Pada evaluasi model ini penulis menggunakan metrik precision content based filte
 
 Precision Metric Formula:
 
-![Precision Formula](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/precision_formula.png)
+![Precision Formula](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/precision_formula.png)
 Gambar 8. Precision Metric Formula
 
 Precision Metric Test:
 
-![Precision Content Based Filtering](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/precision.png)
+![Precision Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/precision.png)
 Gambar 9. Precision Metric Test
 
 Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat dilihat bahwa judul film Outbreak (1995) memiliki 4 genre yaitu Action, Drama, Sci-Fi, dan Thriller. Lalu dari hasil rekomendasi di atas, diketahui bahwa Outbreak (1995) memiliki 4 genre. Dari 10 item yang direkomendasikan, 8 item memiliki kategori 4 genre yang sama (similar). Artinya, precision sistem kita sebesar 8/10 atau sebesar 80%.
@@ -193,9 +193,9 @@ Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat d
 | Formula _Mean Absolute Error (MAE)_ | Formula _Root Mean Squared Error (RMSE)_ |
 | ![MAE](https://gisgeography.com/wp-content/uploads/2014/08/mae-formula.png) | ![RMSE](https://1.bp.blogspot.com/-MM7g3UQjW9s/X8JzKPlxfQI/AAAAAAAACX0/zNDQCP4CJWANa1Bh_zBoLBCCOuUnCXKigCPcBGAYYCw/s16000/Rumus%2BRMSE.jpg) |
 | Visualisasi _Mean Absolute Error (MAE)_ | Visualisasi _Root Mean Squared Error (RMSE)_ |
-| ![Plot MAE](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/mae.png)
+| ![Plot MAE](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/mae.png)
 Gambar 10. Plot MAE | 
-![Plot RMSE](https://github.com/barbarianking88/ProyekAkhirMLT/blob/main/images/rmse.png) |
+![Plot RMSE](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/rmse.png) |
 Gambar 11. Plot RMSE
 | Berdasarkan hasil _fitting_ nilai konvergen metrik MAE berada sedikit dibawah 0.135 untuk training dan sedikit diatas 0.1450 untuk validasi. | Berdasarkan hasil _fitting_ nilai konvergen metrik RMSE berada sedikit diatas 0.170 untuk training dan sedikit dibawah 0.190 untuk validasi. |
 
