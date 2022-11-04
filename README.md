@@ -212,9 +212,9 @@ Gambar 5. Precision Metric Formula
 
 Precision Metric Test:
 
-| movieId |           title |                          genres |
-|---------|-----------------|---------------------------------|
-|     292 | Outbreak (1995) | Action |Drama |Sci-Fi |Thriller |
+| movieId |           title |                         genres |
+|--------:|----------------:|-------------------------------:|
+| 292     | Outbreak (1995) | Action\|Drama\|Sci-Fi-Thriller |
 
 ![MovieRecommendation](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/MovieRecommendation.PNG)
 Gambar 6. MovieRecommendation
