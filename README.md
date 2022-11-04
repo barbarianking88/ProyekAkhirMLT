@@ -176,8 +176,28 @@ Lakukan proses _embedding_ terhadap data film dan pengguna. Lalu lakukan operasi
 
 Berikut ini adalah hasil rekomendasi film tertinggi terhadap user 606:
 
-![Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cf.png)
-Gambar 7. Content Based Filtering
+| Showing recommendations for users: 606            |
+|---------------------------------------------------|
+| Movie with high ratings from user                 |
+| ------------------------------------------------- |
+| Pulp Fiction (1994)                               |
+| Manhattan (1979)                                  |
+| Metropolis (1927)                                 |
+| All About My Mother (Todo sobre mi madre) (1999)  |
+| Guess Who's Coming to Dinner (1967)               |
+| ------------------------------------------------- |
+| Top 10 movie recommendation                       |
+| ------------------------------------------------- |
+| Raging Bull (1980)                                |
+| Boot, Das (Boat, The) (1981)                      |
+| Sevent Seal, The (Sjunde inseglet, Det) (1957)    |
+| Glory (1989)                                      |
+| Touch of Evil (1958)                              |
+| Chinatown (1974)                                  |
+| Evil Dead II (Dead by Dawn) (1987)                |
+| Great Escape, The (1963)                          |
+| Unforgiven (1992)                                 |
+| Manchurian Candidate, The (1962)                  |
 
 ## Evaluation
 Evaluasi yang akan penulis lakukan disini yaitu evaluasi dengan Mean Absolute Error (MAE) dan Root Mean Squared Error (RMSE) pada Collaborative Filtering dan Precision Content Based Filtering
