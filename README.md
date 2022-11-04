@@ -221,16 +221,16 @@ Gambar 6. MovieRecommendation
 
 |                                 title | movieId |                          genres |
 |--------------------------------------:|--------:|--------------------------------:|
-|                      Core, The (2003) |    6264 | Action |Drama |Sci-Fi |Thriller |
-|                           2012 (2009) |   72378 | Action |Drama |Sci-Fi |Thriller |
-|                       Doomsday (2008) |   58297 | Action |Drama |Sci-Fi |Thriller |
-|             Star Trek: Nemesis (2002) |    5944 | Action |Drama |Sci-Fi |Thriller |
-|                 Omega Man, The (1971) |    3032 | Action |Drama |Sci-Fi |Thriller |
-|                       Impostor (2002) |    5046 | Action |Drama |Sci-Fi |Thriller |
-| Rise of the Planet of the Apes (2011) |   88744 | Action |Drama |Sci-Fi |Thriller |
-|    Battlestar Galactica: Razor (2007) |   56921 | Action |Drama |Sci-Fi |Thriller |
-|          X-Men: The Last Stand (2006) |   45499 | Action |Drama |Sci-Fi |Thriller |
-|                       Paycheck (2003) |    7163 | Action |Drama |Sci-Fi |Thriller |
+| Core, The (2003)                      |   6264  | Action\|Drama\|Sci-Fi\|Thriller |
+| 2012 (2009)                           |  72378  | Action\|Drama\|Sci-Fi\|Thriller |
+| Doomsday (2008)                       |  58297  | Action\|Drama\|Sci-Fi\|Thriller |
+| Star Trek: Nemesis (2002)             |   5944  | Action\|Drama\|Sci-Fi\|Thriller |
+| Omega Man, The (1971)                 |   3032  | Action\|Drama\|Sci-Fi\|Thriller |
+| Impostor (2002)                       |   5046  | Action\|Drama\|Sci-Fi\|Thriller |
+| Rise of the Planet of the Apes (2011) |  88744  | Action\|Drama\|Sci-Fi\|Thriller |
+| Battlestar Galactica: Razor (2007)    |  56921  | Action\|Drama\|Sci-Fi\|Thriller |
+| X-Men: The Last Stand (2006)          |  45499  | Action\|Drama\|Sci-Fi\|Thriller |
+| Paycheck (2003)                       |   7163  | Action\|Drama\|Sci-Fi\|Thriller |
 
 Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat dilihat bahwa judul film Outbreak (1995) memiliki 4 genre yaitu Action, Drama, Sci-Fi, dan Thriller. Lalu dari hasil rekomendasi di atas, diketahui bahwa Outbreak (1995) memiliki 4 genre. Dari 10 item yang direkomendasikan, 8 item memiliki kategori 4 genre yang sama (similar). Artinya, precision sistem kita sebesar 8/10 atau sebesar 80%.
 
