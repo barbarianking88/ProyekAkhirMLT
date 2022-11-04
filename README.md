@@ -149,7 +149,7 @@ Berikut ini adalah hasil rekomendasi tertinggi dari model _Content Based Filteri
 
 |                                 title | movieId |           genres |
 |--------------------------------------:|--------:|-----------------:|
-|            Cat in the Hat, The (2003) |    6951 | Children/|Comedy |
+|            Cat in the Hat, The (2003) |    6951 | Children |Comedy |
 |                    Blank Check (1994) |    2036 | Children |Comedy |
 | Home Alone 2: Lost in New York (1992) |    2953 | Children |Comedy |
 |       Air Bud: Golden Receiver (1998) |    2152 | Children |Comedy |
