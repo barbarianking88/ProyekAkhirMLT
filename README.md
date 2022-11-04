@@ -139,9 +139,9 @@ Langkah selanjutnya yaitu menggunakan _argpartition_ untuk mengambil sejumlah ni
 
 Berikut ini adalah konten yang dijadikan referensi untuk menentukan 10 rekomendasi film tertinggi yang memiliki kesamaan genre yang sama:
 
-| movieId |                  title |           genres |
-|---------|-----------------------:|-----------------:|
-| 6338    | Daddy day care (2003)  |  Children|Comedy |
+| movieId |                 title |           genres |
+|--------:|----------------------:|-----------------:|
+| 6338    | Daddy day care (2003) | Children\|Comedy |
 
 Terlihat pada tabel diatas bahwasannya saya akan menguji coba model berdasarkan judul film "Daddy Day Care (2003)" dengan genre Children & Comedy.
 
@@ -149,16 +149,16 @@ Berikut ini adalah hasil rekomendasi tertinggi dari model _Content Based Filteri
 
 |                                 title | movieId |           genres |
 |--------------------------------------:|--------:|-----------------:|
-|            Cat in the Hat, The (2003) |    6951 | Children |Comedy |
-|                    Blank Check (1994) |    2036 | Children |Comedy |
-| Home Alone 2: Lost in New York (1992) |    2953 | Children |Comedy |
-|       Air Bud: Golden Receiver (1998) |    2152 | Children |Comedy |
-|             Blackbeard's Ghost (1968) |    2035 | Children |Comedy |
-|                       Madeline (1998) |    1919 | Children |Comedy |
-|                     Paddington (2014) |  117887 | Children |Comedy |
-|                  Love Bug, The (1969) |    1010 | Children |Comedy |
-|             Ernest Rides Again (1993) |   69227 | Children |Comedy |
-|                 Son of Flubber (1963) |    2098 | Children |Comedy |
+| Cat in the Hat, The (2003)            | 6951    | Children\|Comedy |
+| Blank Check (1994)                    | 2036    | Children\|Comedy |
+| Home Alone 2: Lost in New York (1992) | 2953    | Children\|Comedy |
+| Air Bud: Golden Receiver (1998)       | 2152    | Children\|Comedy |
+| Blackbeard's Ghost (1968)             | 2035    | Children\|Comedy |
+| Madeline (1998)                       | 1919    | Children\|Comedy |
+| Paddington (2014)                     | 117887  | Children\|Comedy |
+| Love Bug, The (1969)                  | 1010    | Children\|Comedy |
+| Ernest Rides Again (1993)             | 69227   | Children\|Comedy |
+| Son of Flubber (1963)                 | 2098    | Children\|Comedy |
 
 ### Collaborative Filtering
 Pada modeling `Collaborative Filtering` penulis menggunakan data hasil gabungan dari dua datasets yaitu *movies.csv* & *ratings.csv*. Langkah pertama adalah melakukan _encode_ data `userId` & `movieId` setelah di _encode_ lakukan _mapping_ ke dalam data yang digunakan dan juga mengubah nilai _rating_ menjadi _float_. Selanjutnya ialah membagi data untuk _training_ sebesar 80% dan validasi sebesar 20%.
