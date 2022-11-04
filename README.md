@@ -208,12 +208,29 @@ Pada evaluasi model ini penulis menggunakan metrik precision content based filte
 Precision Metric Formula:
 
 ![Precision Formula](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/precision_formula.png)
-Gambar 8. Precision Metric Formula
+Gambar 5. Precision Metric Formula
 
 Precision Metric Test:
 
-![Precision Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/precision.png)
-Gambar 9. Precision Metric Test
+| movieId |           title |                          genres |
+|---------|-----------------|---------------------------------|
+|     292 | Outbreak (1995) | Action |Drama |Sci-Fi |Thriller |
+
+![MovieRecommendation](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/MovieRecommendation.PNG)
+Gambar 6. MovieRecommendation
+
+|                                 title | movieId |                          genres |
+|--------------------------------------:|--------:|--------------------------------:|
+|                      Core, The (2003) |    6264 | Action |Drama |Sci-Fi |Thriller |
+|                           2012 (2009) |   72378 | Action |Drama |Sci-Fi |Thriller |
+|                       Doomsday (2008) |   58297 | Action |Drama |Sci-Fi |Thriller |
+|             Star Trek: Nemesis (2002) |    5944 | Action |Drama |Sci-Fi |Thriller |
+|                 Omega Man, The (1971) |    3032 | Action |Drama |Sci-Fi |Thriller |
+|                       Impostor (2002) |    5046 | Action |Drama |Sci-Fi |Thriller |
+| Rise of the Planet of the Apes (2011) |   88744 | Action |Drama |Sci-Fi |Thriller |
+|    Battlestar Galactica: Razor (2007) |   56921 | Action |Drama |Sci-Fi |Thriller |
+|          X-Men: The Last Stand (2006) |   45499 | Action |Drama |Sci-Fi |Thriller |
+|                       Paycheck (2003) |    7163 | Action |Drama |Sci-Fi |Thriller |
 
 Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat dilihat bahwa judul film Outbreak (1995) memiliki 4 genre yaitu Action, Drama, Sci-Fi, dan Thriller. Lalu dari hasil rekomendasi di atas, diketahui bahwa Outbreak (1995) memiliki 4 genre. Dari 10 item yang direkomendasikan, 8 item memiliki kategori 4 genre yang sama (similar). Artinya, precision sistem kita sebesar 8/10 atau sebesar 80%.
 
@@ -225,9 +242,9 @@ Langkah pertama adalah melakukan pengecekan data film berdasarkan title. Dapat d
 | ![MAE](https://gisgeography.com/wp-content/uploads/2014/08/mae-formula.png) | ![RMSE](https://1.bp.blogspot.com/-MM7g3UQjW9s/X8JzKPlxfQI/AAAAAAAACX0/zNDQCP4CJWANa1Bh_zBoLBCCOuUnCXKigCPcBGAYYCw/s16000/Rumus%2BRMSE.jpg) |
 | Visualisasi _Mean Absolute Error (MAE)_ | Visualisasi _Root Mean Squared Error (RMSE)_ |
 | ![Plot MAE](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/mae.png)
-Gambar 10. Plot MAE | 
+Gambar 7. Plot MAE | 
 ![Plot RMSE](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/rmse.png) |
-Gambar 11. Plot RMSE
+Gambar 8. Plot RMSE
 | Berdasarkan hasil _fitting_ nilai konvergen metrik MAE berada sedikit dibawah 0.135 untuk training dan sedikit diatas 0.1450 untuk validasi. | Berdasarkan hasil _fitting_ nilai konvergen metrik RMSE berada sedikit diatas 0.170 untuk training dan sedikit dibawah 0.190 untuk validasi. |
 
 Untuk menghasilkan nilai yang konvergen proses `fitting` memerlukan 15 _epoch_. Dari hasil perhitungan kedua metrik diatas dapat disimpulkan bahwa model ini memiliki tingkat eror di bawah 20%.
