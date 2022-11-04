@@ -139,8 +139,9 @@ Langkah selanjutnya yaitu menggunakan _argpartition_ untuk mengambil sejumlah ni
 
 Berikut ini adalah konten yang dijadikan referensi untuk menentukan 10 rekomendasi film tertinggi yang memiliki kesamaan genre yang sama:
 
-![Content Based Filtering Data Uji](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cek_film.png)
-Gambar 5. Cek film
+| movieId |                  title |           genres |
+|---------|-----------------------:|-----------------:|
+| 6338    | Daddy day care (2003)  |  Children|Comedy |
 
 Terlihat pada tabel diatas bahwasannya saya akan menguji coba model berdasarkan judul film "Daddy Day Care (2003)" dengan genre Children & Comedy.
 
