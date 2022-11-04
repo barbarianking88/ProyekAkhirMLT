@@ -147,8 +147,18 @@ Terlihat pada tabel diatas bahwasannya saya akan menguji coba model berdasarkan 
 
 Berikut ini adalah hasil rekomendasi tertinggi dari model _Content Based Filtering_ berdasarkan referensi film diatas:
 
-![Content Based Filtering](https://raw.githubusercontent.com/barbarianking88/ProyekAkhirMLT/main/images/cbf.png)
-Gambar 6. Content Based Filtering
+|                                 title | movieId |           genres |
+|--------------------------------------:|--------:|-----------------:|
+|            Cat in the Hat, The (2003) |    6951 | Children |Comedy |
+|                    Blank Check (1994) |    2036 | Children |Comedy |
+| Home Alone 2: Lost in New York (1992) |    2953 | Children |Comedy |
+|       Air Bud: Golden Receiver (1998) |    2152 | Children |Comedy |
+|             Blackbeard's Ghost (1968) |    2035 | Children |Comedy |
+|                       Madeline (1998) |    1919 | Children |Comedy |
+|                     Paddington (2014) |  117887 | Children |Comedy |
+|                  Love Bug, The (1969) |    1010 | Children |Comedy |
+|             Ernest Rides Again (1993) |   69227 | Children |Comedy |
+|                 Son of Flubber (1963) |    2098 | Children |Comedy |
 
 ### Collaborative Filtering
 Pada modeling `Collaborative Filtering` penulis menggunakan data hasil gabungan dari dua datasets yaitu *movies.csv* & *ratings.csv*. Langkah pertama adalah melakukan _encode_ data `userId` & `movieId` setelah di _encode_ lakukan _mapping_ ke dalam data yang digunakan dan juga mengubah nilai _rating_ menjadi _float_. Selanjutnya ialah membagi data untuk _training_ sebesar 80% dan validasi sebesar 20%.
